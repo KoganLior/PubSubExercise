@@ -5,7 +5,9 @@ import PrimeGenerator from "./publishers/primesGenerator.js";
 
 function runApp(limitNumber) {
   const testGenerator = new PrimeGenerator(limitNumber);
-  testGenerator.on("PrimeNumber", primeHas1, primeHas4Digits, isMersenne);
+  testGenerator.on("PrimeNumber", primeHas1);
+  testGenerator.on("PrimeNumber",primeHas4Digits);
+  testGenerator.on("PrimeNumber",isMersenne);
   testGenerator.generatePrimeNumbers();
 }
 
