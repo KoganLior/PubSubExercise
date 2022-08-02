@@ -1,5 +1,5 @@
-import MyEvent from "../common/myEvent.js";
-class PrimeGenerator extends MyEvent{
+import eventEmmiter from 'events'
+class PrimeGenerator extends eventEmmiter{
   constructor(limit) {
     super()
     this.generator=this.getNextPrime(limit)
