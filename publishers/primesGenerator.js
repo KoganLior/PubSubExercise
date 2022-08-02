@@ -32,11 +32,11 @@ class PrimeGenerator extends MyEvent{
             return
         }
         console.log(currentPrime)
+        this.emit("PrimeNumber",currentPrime)
     },1000)
       
   }
 }
 
-const myPrimeGen = new PrimeGenerator(11)
-myPrimeGen.generatePrimeNumbers()
+export default PrimeGenerator
 

@@ -10,10 +10,10 @@ class MyEvent{
             this.events[type].push(listener)
         }        
     }
-    emit(eventType){       
+    emit(eventType,...arg){       
         if(this.events[eventType]){
            for(let i=0;i<this.events[eventType].length;i++){
-                 this.events[eventType][i]()
+                 this.events[eventType][i](...arg)
            }
            
         }
