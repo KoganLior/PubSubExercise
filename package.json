@@ -1,5 +1,6 @@
 {
   "name": "primenumberex",
+  "type": "module",
   "version": "1.0.0",
   "description": "A small Exercise that shows Pub-Sub",
   "main": "index.js",
